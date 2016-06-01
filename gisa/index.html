@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>The GISA Study</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../bower_components/angular/angular-csp.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="../dist/form-builder-material.min.css">
+    <link rel="stylesheet" href="../dist/form-viewer-material.min.css">
+    <link rel="stylesheet" href="demo.css">
+    <script type="text/javascript">
+        //hack to remove ARIA warinings
+        console.realWarn = console.warn;
+        console.warn = function (message) {
+            if (message.indexOf("ARIA") == -1) {
+                console.realWarn.apply(console, arguments);
+            }
+        };
+    </script>
+</head>
+<body ng-controller="DemoController as ctrl" ng-cloak>
+
+<md-progress-linear md-mode="determinate" value="{{ctrl.getResponseSheetRow() | progress}}"></md-progress-linear>
+<div layout="row" flex style="height:100%">
+    <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-disable-backdrop md-whiteframe="4" layout-fill>
+        <md-toolbar>
+            <h1 class="md-toolbar-tools">GISA Study</h1>
+        </md-toolbar>
+            <p style="padding:15px;margin:0;">This project aims to determine the proportion of children with autism who have gastrointestinal symptoms, such as vomiting and diarrhea, and whether the severity of these symptoms is related to the severity of the child’s autism.</p>
+
+            <p style="padding:15px;margin:0;">We are doing this community research project because we feel strongly about raising awareness around medical issues that may affect the autism community, particularly in children. Through our research, we noticed that there were few studies exploring whether there was a connection between a child’s degree of autism severity and their associated medical issues. </p>
+
+            <p style="padding:15px;margin:0;">This research hopes to raise awareness about the possibility of gastrointestinal symptoms, particularly in children with severe autism, and to manage these symptoms appropriately. It can also promote early detection and screening for such symptoms in younger children with autism, and could enable undiagnosed children presenting with gastrointestinal symptoms to consider autism as a diagnosis.
+            </p>
+        <md-content flex layout="row" layout-align="center end">
+            <img src="wsu.jpg" style="width:75%;" alt="WSU Logo" />
+        </md-content>
+    </md-sidenav>
+    <md-content class="md-padding tab-content" ng-if="ctrl.formData" flex layout-padding>
+        <div layout="row" layout-align="center">
+            <mw-form-viewer form-data="ctrl.formData" template-data="ctrl.templateData"  form-status="ctrl.formStatus" options="ctrl.formOptions" api="ctrl.formViewer" response-data="ctrl.responseData" read-only="ctrl.viewerReadOnly" on-submit="ctrl.saveResponse()"></mw-form-viewer>
+            <br/>
+        </div>
+    </md-content>
+</div>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-aria/angular-aria.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../bower_components/angular-material/angular-material.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="../bower_components/angular-translate/angular-translate.min.js"></script>
+<script src="../bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+<script src="../bower_components/angular-elastic/elastic.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="../bower_components/Sortable/Sortable.min.js"></script>
+<script src="../bower_components/Sortable/ng-sortable.js"></script>
+<script src="../dist/form-utils.min.js"></script>
+<script src="../dist/form-builder.min.js"></script>
+<script src="../dist/form-builder-material-tpls.min.js"></script>
+<!--<script src="../dist/form-viewer.min.js"></script>-->
+<script src="../src/viewer/form-viewer.module.js"></script>
+<script src="../src/viewer/form-confirmation-page.directive.js"></script>
+<script src="../src/viewer/form-viewer.directive.js"></script>
+<script src="../src/viewer/form-question.directive.js"></script>
+<script src="../src/viewer/priority-list.directive.js"></script>
+<script src="../dist/form-viewer-material-tpls.min.js"></script>
+<script src="demo.js"></script>
+
+
+</body>
+</html>

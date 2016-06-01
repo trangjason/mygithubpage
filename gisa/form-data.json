@@ -1,0 +1,439 @@
+{
+  "pages": [
+    {
+      "id": "fa1f0710070b0f3f13d91aa01781f5b0",
+      "number": 1,
+      "name": null,
+      "description": null,
+      "pageFlow": {
+        "nextPage": true,
+        "label": "mwForm.pageFlow.goToNextPage"
+      },
+      "elements": [
+        {
+          "id": "c5dff720a2e9895a144c6670ed12e1ba",
+          "orderNo": 1,
+          "type": "question",
+          "question": {
+            "id": "071903852265528de314536621a318bf",
+            "text": "How old is your child?",
+            "type": "text",
+            "required": true,
+            "pageFlowModifier": false
+          }
+        },
+        {
+          "id": "3a5baf50fe528f621e4b7db37b78c791",
+          "orderNo": 2,
+          "type": "question",
+          "question": {
+            "id": "cec26b162c689a6cdd0db7353d3baf9f",
+            "text": "In the last three months, how often (if at all) has your child had the following?",
+            "type": "grid",
+            "required": true,
+            "grid": {
+              "rows": [
+                {
+                  "id": "756f039d8c22ea727398fa6245fc2c0c",
+                  "orderNo": 1,
+                  "label": "Abdominal Pain"
+                },
+                {
+                  "id": "31014bbc579020fd16cc94d2247ec6e3",
+                  "orderNo": 2,
+                  "label": "Gaseousness/bloating sensation"
+                },
+                {
+                  "id": "f86f8057552babdca7b17130cb1f3565",
+                  "orderNo": 3,
+                  "label": "Diarrhoea"
+                },
+                {
+                  "id": "398520da372d3c8044490e2229d930ef",
+                  "orderNo": 4,
+                  "label": "Constipation"
+                },
+                {
+                  "id": "6e36e077ff35aff46f74900490ff64fc",
+                  "orderNo": 5,
+                  "label": "Pain on stooling"
+                },
+                {
+                  "id": "306000903828e32a1371348409914500",
+                  "orderNo": 6,
+                  "label": "Vomiting"
+                },
+                {
+                  "id": "a1b6d93cff5b734dbe5f7a1cc612a084",
+                  "orderNo": 7,
+                  "label": "Sensitivity to foods"
+                },
+                {
+                  "id": "f9fff46868ae72049f3549d4ce578f7a",
+                  "orderNo": 8,
+                  "label": "Difficulty swallowing"
+                },
+                {
+                  "id": "de71787bf5fb41110fce088a6698a236",
+                  "orderNo": 9,
+                  "label": "Blood in stools"
+                },
+                {
+                  "id": "53c9a3dbb63be8008960a4e6ddb25d54",
+                  "orderNo": 10,
+                  "label": "Blood in vomit"
+                }
+              ],
+              "cols": [
+                {
+                  "id": "5d115e8850d2999913ee3fd0e114369f",
+                  "orderNo": 1,
+                  "label": "Never"
+                },
+                {
+                  "id": "1718f76035c7b4a759a0d45c1107c86f",
+                  "orderNo": 2,
+                  "label": "Rarely"
+                },
+                {
+                  "id": "9f91d741fe7bfd75eb718fae7ff77763",
+                  "orderNo": 3,
+                  "label": "Sometimes"
+                },
+                {
+                  "id": "29bdd088561e0ac4b166c99652bd9629",
+                  "orderNo": 4,
+                  "label": "Frequently"
+                },
+                {
+                  "id": "7ea55c351b51f1823a523a51729c985a",
+                  "orderNo": 5,
+                  "label": "Always"
+                }
+              ]
+            },
+            "pageFlowModifier": false
+          }
+        }
+      ],
+      "namedPage": false,
+      "isFirst": true,
+      "isLast": false
+    },
+    {
+      "id": "1bce40bed299ade2da0bfa13d0ff4f8d",
+      "number": 2,
+      "name": null,
+      "description": null,
+      "pageFlow": {
+        "nextPage": true,
+        "label": "mwForm.pageFlow.goToNextPage"
+      },
+      "elements": [
+        {
+          "id": "ecbc9da4ed60dc6b5b0199a68a1d81ec",
+          "orderNo": 1,
+          "type": "paragraph",
+          "paragraph": {
+            "id": "910c43d8e2811e52db1d905555d90e7a",
+            "html": "Does your child have:"
+          }
+        },
+        {
+          "id": "f2d38480726b64fe268b0ada60377835",
+          "orderNo": 2,
+          "type": "question",
+          "question": {
+            "id": "d10425df9438b5739e6a56baa8fb1860",
+            "text": "Food allergies?",
+            "type": "radio",
+            "required": true,
+            "offeredAnswers": [
+              {
+                "id": "7f2395fa7e07a63771f66f209836d5c1",
+                "orderNo": 2,
+                "value": "No",
+                "pageFlow": {
+                  "nextPage": true,
+                  "label": "mwForm.pageFlow.goToNextPage"
+                }
+              }
+            ],
+            "pageFlowModifier": false,
+            "otherAnswer": true
+          }
+        },
+        {
+          "id": "221945d39db636ed9904c9af8b8bd602",
+          "orderNo": 3,
+          "type": "question",
+          "question": {
+            "id": "bb0e1cc821808f8c5b2f97de505452e2",
+            "text": "Dietary restrictions?",
+            "type": "radio",
+            "required": true,
+            "offeredAnswers": [
+              {
+                "id": "569e4c271440313c4684a9ff8639bf18",
+                "orderNo": 2,
+                "value": "No",
+                "pageFlow": {
+                  "nextPage": true,
+                  "label": "mwForm.pageFlow.goToNextPage"
+                }
+              }
+            ],
+            "otherAnswer": true
+          }
+        },
+        {
+          "id": "5c3ed13c383e73dee0858739cbd44c7c",
+          "orderNo": 4,
+          "type": "question",
+          "question": {
+            "id": "a0868c3382166f30be9d34ea3b85414c",
+            "text": "Food dislikes?",
+            "type": "radio",
+            "required": true,
+            "offeredAnswers": [
+              {
+                "id": "d289ea27670799a42fb70e06dcb582f8",
+                "orderNo": 1,
+                "value": "No",
+                "pageFlow": {
+                  "nextPage": true,
+                  "label": "mwForm.pageFlow.goToNextPage"
+                }
+              }
+            ],
+            "otherAnswer": true
+          }
+        },
+        {
+          "id": "8968f154ffdd9ba115ab75645d2984c1",
+          "orderNo": 5,
+          "type": "question",
+          "question": {
+            "id": "266cc680fa62cdefe202eff8785c1b73",
+            "text": "A known gastrointestinal disorder?",
+            "type": "radio",
+            "required": true,
+            "offeredAnswers": [
+              {
+                "id": "8ee600f217715cd3b9fba37fbdd7f5ba",
+                "orderNo": 2,
+                "value": "No",
+                "pageFlow": {
+                  "nextPage": true,
+                  "label": "mwForm.pageFlow.goToNextPage"
+                }
+              }
+            ],
+            "otherAnswer": true
+          }
+        }
+      ],
+      "namedPage": false,
+      "isFirst": false,
+      "isLast": false
+    },
+    {
+      "id": "10608823c1d043cfc9e660ae5f390adb",
+      "number": 3,
+      "name": null,
+      "description": null,
+      "pageFlow": {
+        "nextPage": true,
+        "label": "mwForm.pageFlow.goToNextPage"
+      },
+      "elements": [
+        {
+          "id": "2e4f49d303fd7e5b881de73a0bd9e7d4",
+          "orderNo": 1,
+          "type": "question",
+          "question": {
+            "id": "3572edcf531affea602dc88f54fb39cf",
+            "text": "Does your child have a formal diagnosis of autism?",
+            "type": "radio",
+            "required": true,
+            "offeredAnswers": [
+              {
+                "id": "4e98f5a7b5f110f785506c23b49d9463",
+                "orderNo": 1,
+                "value": "Yes",
+                "pageFlow": {
+                  "page": {
+                    "id": "008c94789978a2459449cbdbc7803420",
+                    "number": 4
+                  },
+                  "label": "mwForm.pageFlow.goToPage"
+                }
+              },
+              {
+                "id": "e0bdc8b40c71aa8ed43e011c3f0afae9",
+                "orderNo": 2,
+                "value": "No",
+                "pageFlow": {
+                  "page": {
+                    "id": "7ac6e6a1712c91d4a14fd407b9b3b9ed",
+                    "number": 5
+                  },
+                  "label": "mwForm.pageFlow.goToPage"
+                }
+              }
+            ],
+            "pageFlowModifier": true
+          }
+        }
+      ],
+      "namedPage": false,
+      "isFirst": false,
+      "isLast": false
+    },
+    {
+      "id": "008c94789978a2459449cbdbc7803420",
+      "number": 4,
+      "name": null,
+      "description": null,
+      "pageFlow": {
+        "nextPage": true,
+        "label": "mwForm.pageFlow.goToNextPage"
+      },
+      "elements": [
+        {
+          "id": "024c33721917794b35506aa131179320",
+          "orderNo": 1,
+          "type": "question",
+          "question": {
+            "id": "1949b4378fda834d0e8144a0703d5960",
+            "text": "At what age was your child diagnosed?",
+            "type": "text",
+            "required": true,
+            "pageFlowModifier": false
+          }
+        },
+        {
+          "id": "9a09c028f003a4e0dd316645a7c256b8",
+          "orderNo": 2,
+          "type": "question",
+          "question": {
+            "id": "743fe3952bea7321f5dc09ce8b47971f",
+            "text": "What is the diagnosis given?",
+            "type": "text",
+            "required": true,
+            "pageFlowModifier": false
+          }
+        }
+      ],
+      "namedPage": false,
+      "isFirst": false,
+      "isLast": false
+    },
+    {
+      "id": "7ac6e6a1712c91d4a14fd407b9b3b9ed",
+      "number": 5,
+      "name": null,
+      "description": null,
+      "pageFlow": {
+        "nextPage": true,
+        "label": "mwForm.pageFlow.goToNextPage"
+      },
+      "elements": [
+        {
+          "id": "5ac05549193905d37bcd00929c757e55",
+          "orderNo": 1,
+          "type": "question",
+          "question": {
+            "id": "9e9fc723e07b6d9825485285df88a998",
+            "text": "Choose one option per question below:",
+            "type": "grid",
+            "required": true,
+            "grid": {
+              "rows": [
+                {
+                  "id": "8805b6bfcf46b2697654da4b70a3f96b",
+                  "orderNo": 1,
+                  "label": "S/he often notices small sounds when others do not"
+                },
+                {
+                  "id": "4ea449eae00755cf71f8504d1fb6ffcf",
+                  "orderNo": 2,
+                  "label": "S/he usually concentrates more on the whole picture, rather than the small details"
+                },
+                {
+                  "id": "7177d74d28ea3aa0329fa0159c2265aa",
+                  "orderNo": 3,
+                  "label": "In a social group, s/he can easily keep track of several different people’s conversations"
+                },
+                {
+                  "id": "b4b609aad9514488278b279c78105ee0",
+                  "orderNo": 4,
+                  "label": "S/he finds it easy to go back and forth between different activities"
+                },
+                {
+                  "id": "eb9ec9581cd29ee57e0aab2e11a1e7c9",
+                  "orderNo": 5,
+                  "label": "S/he doesn’t know how to keep a conversation going with his/her peers"
+                },
+                {
+                  "id": "91f0184eed7a30e65c7b1c97e897c488",
+                  "orderNo": 6,
+                  "label": "S/he is good at social chit-chat"
+                },
+                {
+                  "id": "7ba6ec689e3980e3cbba5c34aa137d20",
+                  "orderNo": 7,
+                  "label": "When s/he is read a story, s/he finds it difficult to work out the character’s intentions or feeling"
+                },
+                {
+                  "id": "0998b70c6f3c01ba54b52639068bffd1",
+                  "orderNo": 8,
+                  "label": "When s/he was in preschool, s/he used to enjoy playing games involving pretending with other children"
+                },
+                {
+                  "id": "f3e7e94ad05c9d9426920a1c49ef59d7",
+                  "orderNo": 9,
+                  "label": "S/he finds it easy to work out what someone is thinking or feeling just by looking at their face"
+                },
+                {
+                  "id": "9be8d85723e6289821e89e64e68da3ce",
+                  "orderNo": 10,
+                  "label": "S/he finds it hard to make new friends"
+                }
+              ],
+              "cols": [
+                {
+                  "id": "557f62c10852477294d0cf05f7138d0d",
+                  "orderNo": 1,
+                  "label": "Definitely Agree"
+                },
+                {
+                  "id": "c0b2e8a6ff7366458a1fdf6d1241fcc1",
+                  "orderNo": 2,
+                  "label": "Slightly Agree"
+                },
+                {
+                  "id": "878ae2cd0d537a91843f696c3125fa61",
+                  "orderNo": 3,
+                  "label": "Slightly Disagree"
+                },
+                {
+                  "id": "077d35f1fdb04055a3dd0906b588b3a8",
+                  "orderNo": 4,
+                  "label": "Definitely Disagree"
+                }
+              ]
+            },
+            "pageFlowModifier": false
+          }
+        }
+      ],
+      "namedPage": false,
+      "isFirst": false,
+      "isLast": true
+    }
+  ],
+  "name": "Gastrointestinal Symptoms in Autism",
+  "description": "Thank you for your interest in participating in the Gastrointestinal Symptoms in Autism study.",
+  "confirmationMessage": "Thank you for taking part in our study."
+}
